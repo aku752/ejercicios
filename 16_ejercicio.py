@@ -5,7 +5,6 @@ def suma_digito(numero, total):
     sumar = 0
     while True:
         numero = numero // 10
-        print("Numero: ", numero)
         digito = digito + 1
         if digito >= (total-1):
             modulo = numero % 10
