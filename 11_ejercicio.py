@@ -14,6 +14,5 @@ def comision(venta):
         total = pagar + venta
         print("Debe pagarle por el 5%: ", total)
 
-
 venta = float(input("Digite venta: "))
 comision(venta)
