@@ -10,7 +10,7 @@
 # 26	13	40	20	10	5	16	8	4	2	1
 def ullman(num):
     print(num)
-    for i in range(11):
+    while True:
         if num % 2 == 0:
             num = num // 2
             print(num)
@@ -18,6 +18,9 @@ def ullman(num):
                 break
         else:
             num = (num * 3) + 1
+            print("-----",num)
+            if num == 1:
+                break
 
-numero = int(input("Introduzca un numero mayor a 1: "))
+numero = int(input("Introduzca un numero mayor a 0: "))
 ullman(numero)
