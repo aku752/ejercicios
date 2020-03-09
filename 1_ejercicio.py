@@ -20,8 +20,9 @@ def pagar(categoria, horas):
         descuento = (pagar/100) * 7.5
         pagar = pagar - descuento*2
         print("Cancelar: ", pagar)
+        
 
-
+# EJERCICIO AUN NO RESUELTO XD
 
 categoria = int(input("Categoria: "))
 horas = int(input("Horas trabajadas: "))
