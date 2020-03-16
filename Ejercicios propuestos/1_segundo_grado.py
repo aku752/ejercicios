@@ -10,10 +10,12 @@ if d > 0:
     x1 = -b + sqrt(d)/2*a
     x2 = -b - sqrt(d)/2*a
     print("---- D es mayor a 0 ----")
+    print("Discriminante: ", d)
     print("x1 = ", x1)
     print("x2= ", x2)
 elif d == 0:
     print("---- D es igual a 0 ----")
+    print("Discriminante: ", d)
     x1 = -b/2*a
     x2 = -b/2*a
     print("x1 = ", x1)
