@@ -6,23 +6,19 @@
 #  mostrar el salario mayor del primer turno y el salario
 #  menor del segundo turno.
 empleados = int(input("Cantidad de empleados mañana: "))
+mitad = empleados // 2
 sueldo_mañana = []
-mayor = 0
-menor = 0
+sueldo_tarde = []
 for i in range(1, empleados+1):
-    sueldo = int(input("Sueldo: "))
-    sueldo_mañana.append(sueldo)
-    print("cantridsad-->", i)
-    if sueldo >= mayor:
-        mayor = sueldo
+    if i <= mitad:
+        sueldo = int(input("Sueldo de empleado {}, turno mañana: ".format(i)))
+        sueldo_mañana.append(sueldo)
     else:
-        menor = sueldo
-
-# empleados = int(input("Cantidad de empleados tarde: "))
-# sueldo_mañana = []
-# for cantidad in range(empleados):
-#     sueldo = int(input("Sueldo: "))
-#     sueldo_mañana.append(sueldo)
-#
-# print("Sueldo de la mañana", sueldo_mañana)
-# print("Sueldo de la tarde", sueldo_tarde)
+        sueldo = int(input("Sueldo de empleados {}, turno tarde: ".format(i)))
+        sueldo_tarde.append(sueldo)
+print("\nSueldo turno mañana: ", sueldo_mañana)
+sueldo_mañana.sort(reverse=True)
+print("Sueldo mayor primer turno es de: ", sueldo_mañana[0])
+print("\nSueldo turno tarde: ", sueldo_tarde)
+sueldo_tarde.sort()
+print("Sueldo menor segundo turno es de: ", sueldo_tarde[0])
