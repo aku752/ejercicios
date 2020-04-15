@@ -1,10 +1,9 @@
-lista = []
-for i in range(3):
-    promedio = int(input("Introduzca lados: "))
-    lista.append(promedio)
-if lista[0] == lista[1] == lista[2]:
+a = int(input("Digite lado A: "))
+b = int(input("Digite lado B: "))
+c = int(input("Digite lado C: "))
+if a == b == c:
     print("El triangulo es equilatero")
-elif lista[0] != lista[1] != lista[2]:
+elif a != b and a != c and b != c:
     print("Es triangulo es escaleno")
 else:
     print("Es triangulo isosceles")
