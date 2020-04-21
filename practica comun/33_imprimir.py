@@ -11,7 +11,6 @@ while sw:
         for m in range(1, 4):
             print("I= ", round(i_dec+i, 1), "J= ", round(k+i_dec, 1))
             k += 1
-
         i_dec += 0.2
         if i_dec == 1:
             i_dec = 0.2

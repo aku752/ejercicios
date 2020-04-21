@@ -23,8 +23,5 @@ def temperatura(cantidad):
     print("El porcentaje mayor > 30 es: ", porcentaje_max)
     print("otros es: ", porcentaje_fuera)
 
-
-
-
 cantidad = int(input("Cantidad de regiones: "))
 temperatura(cantidad)

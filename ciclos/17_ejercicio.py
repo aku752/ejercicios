@@ -18,6 +18,5 @@ def numero_perfecto(numero):
         print("No es un numero perfecto: ", numero)
         print("Total de la suma: ", suma)
 
-
 numero = int(input("Digite un numero entero: "))
 numero_perfecto(numero)
