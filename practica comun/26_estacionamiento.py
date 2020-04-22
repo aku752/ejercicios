@@ -2,7 +2,8 @@ horas = int(input("Horas de estacionamiento: "))
 if horas <= 2:
     costo = 5
     total = costo*horas
-elif horas <= 5:    costo = 4
+elif horas <= 5:
+    costo = 4
     total = costo*horas
 elif horas <= 10:
     costo = 3
