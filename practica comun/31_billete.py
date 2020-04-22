@@ -10,7 +10,7 @@ while sw:
             print(dinero)
     sw = False
 
-
+#FALTAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 
     #
